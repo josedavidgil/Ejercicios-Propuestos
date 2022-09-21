@@ -2,6 +2,12 @@
 #para poder acceder al sistema, debe ser ingresada la contraseña propuesta anteriormente.
 #Si la constraseña es errónea, imprimir un mensaje advirtiendo de que la contraseña es incorrecta,
 #de lo contrario, imprimir un mensaje indicando que la constraseña es correcta.
+# realizar la implementación mediante objetos o dar una funcionalidad adicional
+'''
+en caso de realizar la implementación con objetos debe realizar la definición y documentacción de la clase así como permitir que la clave de acceso a algún tipo de información. 
+o se puede solicitar funcionalidad adicional, en ese caso se debe especificar la funcionalidad y generar las definiciones y comentarios correspondientes, 
+en cada una de las funciones.  
+'''
 
 #Ejemplo:
 
