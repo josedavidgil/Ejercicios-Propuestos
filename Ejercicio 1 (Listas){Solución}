@@ -1,14 +1,14 @@
-str_01 = input("Ingrese la cadena de caracteres...")
+str_01 = input("Ingrese la cadena de caracteres...")       #Permite ingresar al usuario la cadena de carácteres que desea usar
 
 
-def lista(str_01):
-    l_str01 = []
-    for i in range(0, len(list(str_01))):
-        if i % 2 == 0:
-            l_str01.append(list(str_01)[i])
-        else:
+def lista(str_01):           #Inicio de la función 
+    l_str01 = []      #Se crea una lista vacía para almacenar la nueva cadena de caracteres
+    for i in range(0, len(list(str_01))):     #en este bucle, si la casilla donde se encuentra la letra no es par no se hacen cambios en ella, mientras que  si es par se cambia por la letra mayúscula de esta.
+        if i % 2 == 0:          #Casillas pares
+            l_str01.append(list(str_01)[i])       
+        else:              #Casillas impares
             l_str01.append(list(str_01)[i].upper())
-    return l_str01
+    return l_str01        #Se retorna el resultado obtenido
 
 
-print(lista(str_01))
+print(lista(str_01))       #Se imprime el resultado para que el usuario pueda verlo.
