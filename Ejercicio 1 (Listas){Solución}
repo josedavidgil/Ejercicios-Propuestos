@@ -1,0 +1,14 @@
+str_01 = input("Ingrese la cadena de caracteres...")
+
+
+def lista(str_01):
+    l_str01 = []
+    for i in range(0, len(list(str_01))):
+        if i % 2 == 0:
+            l_str01.append(list(str_01)[i])
+        else:
+            l_str01.append(list(str_01)[i].upper())
+    return l_str01
+
+
+print(lista(str_01))
