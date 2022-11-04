@@ -1,0 +1,9 @@
+class contrasenas():
+    def __init__(self, contrasena):      #Clase inicial, se asigna la variable de contraseaña a la ingresada por el usuario
+        self.contrasena = contrasena
+
+    def acceder(self, contraacc):        #Funcion que determina el acceso
+        if contraacc != self.contrasena:      #Si la contraseña ingresada es distinta a la contraseña para acceder, el acceso sera invalido
+            return "Acceso inválido"
+        else:                                 #Si la contraseña ingresada es igual a la contraseña para acceder, el acceso sera valido
+            return "Acceso válido"
