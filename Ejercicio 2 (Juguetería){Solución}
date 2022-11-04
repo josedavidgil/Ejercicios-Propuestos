@@ -1,0 +1,21 @@
+class jugueteria():
+    print("Juguetes: (1)Oso = 25000-(2)Elefante = 30000-(3)Tren = 40000-(4)Jirafa =20000-(5)Pistola de Agua = 70000-(6)Paquete de Carros = 80000")    #se crea la lista con todas las opciones
+
+    def __init__(self, nombrecl, dinerocl): #Función que asigna los valores de dinero y de nombre del cliente para la factura
+        self.nombrecl = nombrecl
+        self.dinerocl = dinerocl
+
+    def comprar(self, juguete):        #Funcion que permite comprar un juguete
+        global din
+        c = 0        #Contador
+        l_juguetes = ("Oso", "Elefante", "Tren", "Jirafa", "Pistola de Agua", "Paquete de Carros")        #Lista de juguetes
+        l_precios = (25000, 30000, 40000, 20000, 70000, 80000)    #Lista de precios
+        for i in l_juguetes:
+            if i == juguete:
+                din = l_precios[c]    #Escribir el juguete en caso de comprarlo
+                juguete = i
+            else:
+                c += 1      #Se controla la variable contadora
+        self.factura = ("Cliente: ", self.nombrecl, "---", "Juguete comprado:", juguete, "---", "Valor:", din)       #Creación de la factura
+    def factura(self):
+        print(self.factura)         #Se imprime la factura
